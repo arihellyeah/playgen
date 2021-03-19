@@ -2,6 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Form, {TYPES} from 'react-native-basic-form';
+import activityData1 from './data/activityData1';
+import activityData2 from './data/activityData2';
+import activityData3 from './data/activityData3';
+import activityData4 from './data/activityData4';
+import activityData5 from './data/activityData5';
+import activityData6 from './data/activityData6';
+import activityData7 from './data/activityData7';
 
 
 export default function App() {
@@ -63,8 +70,27 @@ export default function App() {
   ];
 
   async function onSubmit(data) {
+    // Change database based on age input
+    // Traverse based on other inputs
+    // choose random activity based on count
+    // render activity
+    let db;
+    data['age'] === 1 ?
+      db = activityData1 :
+    data['age'] === 2 ?
+      db = activityData2 :
+    data['age'] === 3 ?
+      db = activityData3 :
+    data['age'] === 4 ?
+      db = activityData4 :
+    data['age'] === 5 ?
+      db = activityData5 :
+    data['age'] === 6 ?
+      db = activityData6 :
+      db = activityData7;
 
-    console.log(data)
+    console.log(db);
+    //console.log(activityData1[0]);
 }
 
 
@@ -77,6 +103,7 @@ export default function App() {
         onSubmit={onSubmit}
 
       />
+
     </View>
   );
 }
