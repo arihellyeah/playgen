@@ -1,0 +1,5 @@
+//weather
+  //indoor / outdoor
+    // cost
+      // effort
+        // activity

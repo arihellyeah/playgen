@@ -7,9 +7,13 @@ import Form, {TYPES} from 'react-native-basic-form';
 export default function App() {
 
   const ageOptions = [
-  {label:'1', value:1},
-  {label:'2', value:2},
-  {label:'3', value:3},
+  {label:'Infants (0-1 year)', value:1},
+  {label:'Toddlers (1-2 years)', value:2},
+  {label:'Toddlers (2-3 years)', value:3},
+  {label:'Preschoolers (3-5 years)', value:4},
+  {label:'Middle Childhood (6-8 years)', value:5},
+  {label:'Middle Childhood (9-11 years)', value:6},
+  {label:'Young Teens (12-14 years)', value:7}
   ]
 
   const inoutOptions = [
@@ -18,15 +22,15 @@ export default function App() {
   ]
 
   const costOptions = [
-  {label:'$', value:'low'},
-  {label:'$$', value:'med'},
-  {label:'$$$', value:'high'}
+  {label:'$', value:'lowCost'},
+  {label:'$$', value:'medCost'},
+  {label:'$$$', value:'highCost'}
   ]
 
   const effortOptions = [
-  {label:'Low', value:'low'},
-  {label:'Medium', value:'med'},
-  {label:'High', value:'high'}
+  {label:'Low', value:'lowEffort'},
+  {label:'Medium', value:'medEffort'},
+  {label:'High', value:'highEffort'}
   ]
 
   const weatherOptions = [
@@ -36,7 +40,11 @@ export default function App() {
   ]
 
   const initialData = {
-    'age': 2
+    'age': 2,
+    'inOut':'in',
+    'weather': 'fair',
+    'cost': 'low',
+    'effort': 'low'
   }
 
   const fields = [
@@ -52,7 +60,13 @@ export default function App() {
 
     ]
 
-  ]
+  ];
+
+  async function onSubmit(data) {
+
+    console.log(data)
+}
+
 
   return (
     <View style={styles.container}>
@@ -60,6 +74,7 @@ export default function App() {
         title={"Generate"}
         fields={fields}
         initialData={initialData}
+        onSubmit={onSubmit}
 
       />
     </View>
