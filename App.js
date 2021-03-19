@@ -70,7 +70,7 @@ export default function App() {
   ];
 
   async function onSubmit(data) {
-    // Change database based on age input
+    // Change database based on age input 
     // Traverse based on other inputs
     // choose random activity based on count
     // render activity
