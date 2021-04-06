@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "877949302037",
+    "project_id": "playgen-90049",
+    "storage_bucket": "playgen-90049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877949302037:android:e5f1dd16cc65c9976ea51c",
+        "android_client_info": {
+          "package_name": "com.playgen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877949302037-m3eps4l8pfdaga85n4bg413pn16u71tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playgen",
+            "certificate_hash": "b58ac37bad0052dfcd450b65c38c7594a0de7019"
+          }
+        },
+        {
+          "client_id": "877949302037-3upiu6u6he61gjkvq95u72ueu6g9gqug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKo7Q_tb4_9pP2x59f7sjmUMmlLPMBlDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877949302037-3upiu6u6he61gjkvq95u72ueu6g9gqug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
